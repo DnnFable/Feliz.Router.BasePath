@@ -1,0 +1,19 @@
+obj/
+.vs/
+.ionide/
+.fable/
+.fake/
+.vscode/
+bin/
+packages/
+
+node_modules
+*.fs.js*
+*.?sproj.user
+setEnvForDevelopment.ps1
+dist/
+.install/
+
+#Paket dependency manager
+.paket/
+paket-files/
