@@ -1,21 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Feliz.Router.BasePath</PackageId>
-    <Version>0.1.0</Version>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <Authors>Stefan Cullmann</Authors>
-    <Company>DnnFable</Company>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/DnnFable/Feliz.Router.BasePath</PackageProjectUrl>
-    <PackageTags>feliz fable-compiler</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Description>Hooks for using Feliz.Router in sub pages</Description>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="List.fs" />
-    <Compile Include="Router.fs" />
-  </ItemGroup>
-  <Import Project="..\.paket\Paket.Restore.targets" />
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageId>Feliz.Router.BasePath</PackageId>
+        <Version>0.1.1</Version>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <Authors>Stefan Cullmann</Authors>
+        <Company>DnnFable</Company>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/DnnFable/Feliz.Router.BasePath</PackageProjectUrl>
+        <PackageTags>feliz fable-compiler</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>Hooks for using Feliz.Router in sub pages</Description>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="List.fs" />
+        <Compile Include="Router.fs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="*.fsproj; **\*.fs" PackagePath="fable\" />
+    </ItemGroup>
+    <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>
